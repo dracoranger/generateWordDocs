@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import docx
 
 def main():
@@ -30,3 +32,4 @@ def main():
                     if lastCapsDefault in paragraph.text:
                         paragraph.text.replace(lastCapsDefault, lastCaps)
                 docNew.save(j.split('.')[0]+lastCaps+j.split('.')[1])
+main()
